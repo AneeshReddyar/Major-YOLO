@@ -1,0 +1,142 @@
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #7f8c8d;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.upload-button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.upload-button:hover {
+  background-color: #2980b9;
+}
+
+.upload-button input {
+  display: none;
+}
+
+.preview-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview-image {
+  max-width: 400px;
+  max-height: 400px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.detect-button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.detect-button:hover {
+  background-color: #219653;
+}
+
+.detect-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.results-container {
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.detection-image img {
+  max-width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.detection-info {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.detections-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.detection-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.class-tag {
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.class-tag.crop {
+  background-color: #27ae60;
+}
+
+.class-tag.weed {
+  background-color: #e74c3c;
+}
+
+.confidence {
+  color: #7f8c8d;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+}
