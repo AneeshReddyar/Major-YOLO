@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "yolo_app.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+      { "src": "/.*", "dest": "yolo_app.py" }
+    ]
+  }
+  
